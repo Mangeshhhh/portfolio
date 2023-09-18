@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mangesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0px;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.5rem;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+        background: white;
+      }
+      .image-top2 {
+        width: 42px;
+        position: relative;
+        top: -32px;
+        left: -21px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-title1 {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-title1 a {
+        text-decoration: none;
+        color: #15ea95;
+      }
+      .vertical-title2 {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-title2 a {
+        text-decoration: none;
+        color: red;
+      }
+      .vertical-title3 {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-title3 a{
+        text-decoration: none;
+        color:rgb(235, 67, 151);
+      }
+      .vertical-title a {
+        text-decoration: none;
+        color: #f3aa0e;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        width: 150px;
+        color: gray;
+        font-size: 10px;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        text-decoration: none;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Mangesh's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is <span class="purple">Mangesh Bandal</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button
+              class="btn"
+              onclick="window.location.href='https://github.com/Mangeshhhh'"
+            >
+              Visit Github
+            </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Works</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="amazon .png" alt="" />
+            <div class="vertical-title">
+              <a
+                href="https://mangeshhhh.github.io/Amazon_clone/"
+                target="_blank"
+                >Amazon Website</a
+              >
+            </div>
+            <div class="vertical-desc">
+              It is a clone of Amazon website.Apply CSS styles to achieve a
+              visually appealing and user-friendly interface. Use CSS to layout
+              elements, style buttons, inputs, and other components. Choose
+              appropriate fonts and sizes for headings, paragraphs, and other
+              text elements. Implemented the necessary tags.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="crud.png" alt="" />
+            <div class="vertical-title1">
+              <a
+                href="https://addcourseslistitems.000webhostapp.com/"
+                target="_blank"
+                >CRUD Application</a
+              >
+            </div>
+            <div class="vertical-desc">
+              Design a form with input fields to collect data from the user.
+              Create JavaScript functions to process user inputs. Use event
+              listeners to trigger actions based on user interactions. Provide a
+              form or interface to allow users to edit existing data. Pre-fill
+              the form with the selected data for editing.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top2" src="netflix.png" alt="" />
+            <div class="vertical-title2">
+              <a
+                href="https://mangeshhhh.github.io/Netflix_clone/"
+                target="_blank"
+                >Netflix Website</a
+              >
+            </div>
+            <div class="vertical-desc">
+              It is a clone of Netflix website. Implementation of html and css.
+              Display a section with featured movies or TV shows in a grid
+              layout. Use HTML and CSS to structure and style the content.
+              Implemented the necessarytags.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title3"><a href="#" target="_blank">Apna Cart</a></div>
+            <div class="vertical-desc">
+              Implement the logic for adding items to the cart, updating
+              quantities, removing items, and calculating the total. Design a
+              component to display the contents of the shopping cart, including
+              item names, quantities, prices, and total amount.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              facilis iusto itaque, incidunt dolor saepe distinctio at provident
+              iste eum qui, ullam animi doloremque! Qui asperiores repellendus
+              repellat officiis magnam.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              facilis iusto itaque, incidunt dolor saepe distinctio at provident
+              iste eum qui, ullam animi doloremque! Qui asperiores repellendus
+              repellat officiis magnam.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Mangesh's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; mangeshsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Front-end Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
